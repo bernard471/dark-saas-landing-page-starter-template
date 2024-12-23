@@ -178,7 +178,7 @@ export default function SignupPage() {
                 href="/login"
                 className="text-teal-400 hover:text-teal-300 transition duration-200"
               >
-                Sign in
+                Login
               </Link>
             </p>
           </div>
