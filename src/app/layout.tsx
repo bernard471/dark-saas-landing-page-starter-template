@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import clsx from "clsx";
 import "./globals.css";
+import { Toaster } from "@/components/ui/toaster"
+
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
@@ -16,8 +18,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+  
     <html lang="en">
-      <body className={clsx(dmSans.className, "antialiased")}>{children}</body>
+      <body 
+      className={clsx(
+        dmSans.className, "antialiased"
+        )}>
+ 
+          {children}
+          <Toaster />
+
+          </body>
     </html>
+
   );
 }
+
+
