@@ -20,7 +20,7 @@ export default function UsersPage() {
           <div className="flex items-center justify-between mt-14 mb-5">
             <h1 className="text-3xl font-bold text-zinc-100">User Management</h1>
           </div>
-          <UserTable users={users} />
+          <UserTable />
         </div>
     </div>
   )

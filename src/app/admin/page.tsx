@@ -168,7 +168,7 @@ export default function AdminDashboard() {
 
             {/* Table Section */}
             <section className="w-full bg-zinc-900/30 rounded-lg border border-zinc-800">
-              <UserTable users={users} />
+              <UserTable />
             </section>
           </div>
         </div>
